@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מכבי חיפה</title>
+
+    <script>
+        {
+            function add()
+            {
+                var param1=document.getElementsByName("סוג מלבוש").values;
+                var param2=document.getElementsByName("צבע").values;
+                console.log(param1);
+                console.log(param2);
+                var res=Number(param2)+Number(param1);
+                document.getElementsByName("Result").innertext=res;
+            }
+
+    
+            
+        }
+        </script>
+</head>
+
+   <body>
+       <form action="https://formspree.io/f/moqpkgzq" method="POST">
+            <label>
+                   :<br>
+                  <input type="text" name="name" value="" placeholder="29760734" disabled>this row is disabled
+                    
+        
+            </label>
+            <br><br>
+            <label>
+                 שם פרטי:<br>
+                <input type="text" name="name" value="" maxlength="20" placeholder="you have just 20 letter">
+            </label>
+            <br><br>
+            <label>
+                  שם משפחה: <br>
+                 <input type="text" name="name" value="" maxlength="20"placeholder="you have just 20 letters" >
+            </label>
+            <br>
+            <br>
+              :סוג מלבוש (יכול לבחור אופציה אחת)
+            <br>
+        
+                <input type="radio" id="חולצה" name="סוג מלבוש" value="10" checked >
+                <label for="חולצה">חולצה</label><br>
+                <input type="radio" id="גופיה" name="סוג מלבוש" value="10" >
+                <label for="גופיה">גופיה</label><br>
+                <input type="radio" id="סוודר" name="סוג מלבוש" value="20" >
+                <label for="סוודר">סוודר</label><br>
+                <input type="radio" id="הודי" name="סוג מלבוש" value="30" >
+                <label for="הודי">הודי</label><br>
+                <input type="radio" id="מעיל" name="סוג מלבוש" value="50" >
+               <label for="מעיל">מעיל</label><br>
+            <br>
+            <label for="מלבוש"> :צבע</label>
+            <br>
+            <select id="צבע" name="צבע">
+                <option value="0">אדום</option> 
+                <option value="5">ירוק</option> 
+                <option value="-2">כחול</option> 
+                <option value="0" selected>לבן</option> 
+
+            </select>
+            <br><br>
+            :גודל(יכול לבחור אופציה אחת)
+            <br>
+
+           
+            <input type="radio" id="S" name="size" value="S">
+            <label for="S" >S</label>
+            <input type="radio" id="M" name="size" value="M">
+            <label for="M" >M</label>
+            <input type="radio" id="X" name="size" value="X">
+            <label for="X" >X</label>
+            <input type="radio" id="XL" name="size" value="XL">
+            <label for="XL" >XL</label>
+            <br>            <br>
+            :מיקום לוגו הקבוצה(יכול לבחור יותר מאופציה אחת)
+            <br>
+            <input type="checkbox" name="אחורה">
+            <label for="אחורה" >אחורה</label> 
+            <input type="checkbox" name="קדימה">
+            <label for="קדימה" >קדימה</label>
+            <input type="checkbox" name="שרוול ימין"> 
+            <label for="שרוול ימין" >שרוול ימין</label>
+            <input type="checkbox" name="שרוול שמאל"> 
+            <label for="שרוול שמאל" >שרוול שמאל</label>
+            <br><br>
+
+             <div id="Result">
+                
+                </div> 
+
+            <button type="reset">Reset</button>
+            <button type="submit">submit</button>
+
+
+            
+
+
+
+
+
+        </form>
+    
+   </body>
+</html>

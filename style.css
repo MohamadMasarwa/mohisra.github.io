@@ -1,0 +1,23 @@
+.index_h2{
+    color: green;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.index_h3{
+    color: hotpink;
+    font-size: 100%;
+    line-height: 1.6;
+}
+
+.image1{
+    display: block;
+    border:indianred;
+    padding: 5px;
+}
+.cl{
+    background-color: indigo;
+    color: black;
+    position: absolute;
+    margin: 2px;
+}
